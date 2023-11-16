@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>survey-form-project</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Student survey form</h1>
+    <p id="description">With your help we can improve the platform thank you!</p>
+    <form id="survey-form">
+    <fieldset>
+    <label id="name-label" for="name">Name: <input id="name"
+    name="name" type="text" placeholder="Enter yor name"required/></label>
+    <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your Email"required/></label>
+    <label id="number-label" for="number">Age: <input id="number" name="number" type="number" placeholder="Age" min=13 max=100 /></label>
+    </fieldset>
+    <fieldset>
+      <label> How did you heart about us
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Facebook</option>
+          <option value="2">Twitter</option>
+          <option value="3">Linkedin</option>
+        </select>
+      </label>
+      </fieldset>
+      <fieldset>
+      <legend>Would you recommend the platform to a friend?</legend>
+        <label for="definitely"><input class="inline" value="definitely" id="definitely" name="recommend" type="radio" checked /> Definitely</label>
+        <label for="maybe"><input class="inline" value="maybe" id="maybe" name="recommend"type="radio" checked /> Maybe</label>
+        <label for="never"><input class="inline" value="never" id="never" name="recommend"type="radio" checked /> Never</label>
+        </fieldset>
+        <fieldset>
+      <legend>What courses would like take in the future?</legend>
+        <label for="frontend"><input class="inline" type="checkbox" value="frontend" name="frontend"/>Frontend</label>
+        <label for="backend"><input class="inline" type="checkbox" value="backend" name="backend"/>Backend</label>
+      </label>
+      </fieldset>
+      <fieldset>
+      <label for="comments"> Any comments or suggestions?
+        <textarea id="comments" name="comments" rows=3 cols=30 placeholder="Type comments"></textarea>
+      </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
