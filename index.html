@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario Gym</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <h1>X Gym</h1>
+    <p>Con tu ayuda podemos mejorar nuestro servicio gracias!</p>
+    <form id=survey-form>
+      <fieldset>
+        <label id="name-label" for="name">Nombre:<input id="name" name="name" type="text" 
+          placeholder="Escribe tu nombre"required/></label>
+        <label id="email-label" for="email">Email:<input id="email" name="email" type="email"
+          placeholder="Escribe tu email"required/></label>
+        <label id="number-label" for="number">Edad<input id="number" name="number" type="number"
+          placeholder="Edad" min=10 max=100 /></label>
+        <label id="weight-label" for="weight">Peso<input id="weight" name="weight" type="number" placeholder="50.0" step="0.01" min="20" max="200"/>
+      </fieldset>
+      <fieldset>
+        <label>
+            ¿Cómo escuchaste de nosotros?
+            <select id="dropdown" name="dropdowm">
+             <option value="">(selecciona una)</option> 
+             <option value="1">Facebook</option> 
+             <option value="2">Instagram</option> 
+             <option value="3">Recomedación de otra persona</option> 
+            </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend> Recomedarías el gimnasio a otras personas?</legend>
+        <label for="definitely"><input class="inline" value="definitivamente" id="definitely" name="recommend" type="radio"/>Definitivamente</label>
+        <label for="maybe"><input class="inline" value="posiblemente" id="maybe" name="recommend" type="radio"/>Posiblemente</label>
+        <label for="never"><input class="inline" value="nunca" id="never" name="recommend" type="radio"/>Nunca</label>
+      </fieldset>
+      <fieldset>
+        <legend>Cuál o Cuáles actividades praticas en el gimnasio?</legend>
+        <label for="bodybuilding"><input class="inline"value="musculacion" name="training" type="checkbox"/>Musculación</label>
+        <label for="cross"><input class="inline" value="cross-training" name="cross" type="checkbox"/>Cross Training</label>
+        <label for="dance"><input class="inline" value="bailoterapia" name="dance" type="checkbox"/>Bailoterapia</label>
+        <label for="step"><input class="inline" value="step" name="step" type="checkbox"/>Step</label>
+      </fieldset>
+       
+      <fieldset>
+        <label for="comments"> Sugerencias o recomendaciones.</label>
+          <textarea id="comments" name="comments" rows=3 cols=30 
+            placeholder="Escribe tus comentarios"></textarea>
+      </fieldset>
+       <input type="submit" value="Enviar" id="submit"/> 
+    </form>
+  </body>
+</html>
